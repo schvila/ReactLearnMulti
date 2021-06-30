@@ -1,6 +1,6 @@
-import React from 'react';
-
-import styles from './Button.module.css';
+import React from "react";
+// using css modules, also ensures unique class names with css in separate file special name necessary 'component.module.css'
+import styles from "./Button.module.css";
 // import styled from 'styled-components';
 
 // const Button = styled.button`
@@ -29,7 +29,7 @@ import styles from './Button.module.css';
 //   }
 // `;
 
-const Button = props => {
+const Button = (props) => {
   return (
     <button type={props.type} className={styles.button} onClick={props.onClick}>
       {props.children}
