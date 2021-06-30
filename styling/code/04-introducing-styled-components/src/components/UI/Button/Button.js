@@ -1,5 +1,6 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
+// styled-components auto generates unique css class names, this ensures other components are not affected by this style
+// sudo selector &:  &:focus ` backtick is next to the shift
 const Button = styled.button`
   font: inherit;
   padding: 0.5rem 1.5rem;
